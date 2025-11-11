@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .font-arabic {
+    font-family: 'Cairo', sans-serif;
+  }
+
+  .font-serif {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .font-sans {
+    font-family: 'Lato', sans-serif;
+  }
+
+  html[dir="rtl"] body {
+    direction: rtl;
+    text-align: right;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Lato', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+  .text-navy {
+    color: #14202C;
+  }
+
+  .bg-navy {
+    background-color: #14202C;
+  }
+
+  .text-gold {
+    color: #D9A441;
+  }
+
+  .bg-gold {
+    background-color: #D9A441;
+  }
+
+  .text-ivory {
+    color: #F8F4E3;
+  }
+
+  .bg-ivory {
+    background-color: #F8F4E3;
+  }
+
+  .border-navy {
+    border-color: #14202C;
+  }
+
+  .border-gold {
+    border-color: #D9A441;
+  }
+}
